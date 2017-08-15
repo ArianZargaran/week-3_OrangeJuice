@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+}
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #e99a0a;  }
+
+  .header__logo {
+    background-image: url('#');
+    .header__logo-link {
+      font-weight: 100;
+      padding: 10px 10px 10px 33px;
+      font-size: 34px;
+      text-decoration: none;
+      color: #fff;
+      letter-spacing: -1px;
+      background-image: url('../icons/logo.png');
+      background-repeat: no-repeat;
+      background-size: 15%;
+      background-position: left;
+      .header__logo--bold {
+        font-weight: 500;}
+        sup {
+          vertical-align: super;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .header__nav {
+      display: flex;
+      justify-content: space-between;
+      min-width: 25%;
+      .header__nav-item {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 12px;
+      }
+    }

@@ -1,0 +1,63 @@
+/* line 3, main.scss */
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300; }
+
+/* line 7, main.scss */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+/* line 11, main.scss */
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 50px;
+  background-color: #e99a0a; }
+
+/* line 18, main.scss */
+.header__logo {
+  background-image: url("#"); }
+  /* line 20, main.scss */
+  .header__logo .header__logo-link {
+    font-weight: 100;
+    padding: 10px 10px 10px 33px;
+    font-size: 34px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: -1px;
+    background-image: url("../icons/logo.png");
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: left; }
+    /* line 31, main.scss */
+    .header__logo .header__logo-link .header__logo--bold {
+      font-weight: 500; }
+    /* line 33, main.scss */
+    .header__logo .header__logo-link sup {
+      vertical-align: super;
+      font-size: 12px; }
+
+/* line 40, main.scss */
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 25%; }
+  /* line 44, main.scss */
+  .header__nav .header__nav-item {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 12px; }
+
+/*# sourceMappingURL=main.css.map */
