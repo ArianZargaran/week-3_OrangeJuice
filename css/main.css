@@ -8,7 +8,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-/* line 11, main.scss */
+/* line 12, main.scss */
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19,13 +19,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 20px 50px;
   background-color: #e99a0a; }
 
-/* line 18, main.scss */
+/* line 20, main.scss */
 .header__logo {
   background-image: url("#"); }
-  /* line 20, main.scss */
+  /* line 22, main.scss */
   .header__logo .header__logo-link {
     font-weight: 100;
     padding: 10px 10px 10px 33px;
@@ -33,19 +35,19 @@ body {
     text-decoration: none;
     color: #fff;
     letter-spacing: -1px;
-    background-image: url("../icons/logo.png");
+    background-image: url("https://arianzargaran.github.io/week-3_OrangeJuice/icons/logo.png");
     background-repeat: no-repeat;
     background-size: 15%;
     background-position: left; }
-    /* line 31, main.scss */
+    /* line 33, main.scss */
     .header__logo .header__logo-link .header__logo--bold {
       font-weight: 500; }
-    /* line 33, main.scss */
+    /* line 35, main.scss */
     .header__logo .header__logo-link sup {
       vertical-align: super;
       font-size: 12px; }
 
-/* line 40, main.scss */
+/* line 42, main.scss */
 .header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,11 +55,138 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   min-width: 25%; }
-  /* line 44, main.scss */
+  /* line 47, main.scss */
   .header__nav .header__nav-item {
     color: #fff;
     text-decoration: none;
     padding: 10px 12px; }
+
+/* line 55, main.scss */
+.search-bar {
+  float: right;
+  width: 200px;
+  margin: 10px 30px;
+  background: #eee;
+  padding: 12px 15px; }
+  /* line 61, main.scss */
+  .search-bar .search-bar__field--grey {
+    background: #eee;
+    border: none;
+    outline: none;
+    font-size: 12px; }
+    /* line 66, main.scss */
+    .search-bar .search-bar__field--grey::-webkit-input-placeholder {
+      color: #bbb; }
+    .search-bar .search-bar__field--grey:-ms-input-placeholder {
+      color: #bbb; }
+    .search-bar .search-bar__field--grey::placeholder {
+      color: #bbb; }
+  /* line 70, main.scss */
+  .search-bar .search-bar__button--grey {
+    float: right;
+    background: #eee;
+    border: none;
+    color: #bbb; }
+
+/* line 78, main.scss */
+.cta {
+  width: 100%;
+  padding: 10px 30px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+/* line 88, main.scss */
+.cta__image {
+  display: block;
+  width: 45%;
+  max-width: 503px;
+  min-width: 300px;
+  height: 100%; }
+
+/* line 96, main.scss */
+.cta__text-box--right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%; }
+  /* line 101, main.scss */
+  .cta__text-box--right .cta__paragraph {
+    color: #e99a0a;
+    font-size: 34px;
+    line-height: 50px; }
+
+/* line 107, main.scss */
+.logo__paragraph {
+  font-weight: 100;
+  letter-spacing: -1px;
+  font-weight: 500; }
+
+/* line 111, main.scss */
+.cta__paragraph sup {
+  vertical-align: super;
+  font-size: 12px; }
+
+/* line 114, main.scss */
+.cta__paragraph strong {
+  color: #06d8ce;
+  font-weight: 900; }
+
+/* line 119, main.scss */
+.cta__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin-top: 3%; }
+  /* line 125, main.scss */
+  .cta__buttons .cta__button-quote--orange {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    -ms-flex-preferred-size: 200px;
+        flex-basis: 200px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    padding: 12px 5px;
+    background: #e99a0a; }
+  /* line 135, main.scss */
+  .cta__buttons .cta__button-case-studies--cyan {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    -ms-flex-preferred-size: 200px;
+        flex-basis: 200px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    padding: 12px 5px;
+    background: #06d8ce; }
+
+/* line 145, main.scss */
+.blue__section {
+  height: 100px;
+  background: #06d8ce; }
 
 /*# sourceMappingURL=main.css.map */

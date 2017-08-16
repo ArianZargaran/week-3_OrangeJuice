@@ -8,10 +8,12 @@ body {
   box-sizing: border-box;
 }
 
+//HEADER SECTION
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding: 20px 50px;
   background-color: #e99a0a;  }
 
@@ -24,7 +26,7 @@ body {
       text-decoration: none;
       color: #fff;
       letter-spacing: -1px;
-      background-image: url('../icons/logo.png');
+      background-image: url('https://arianzargaran.github.io/week-3_OrangeJuice/icons/logo.png');
       background-repeat: no-repeat;
       background-size: 15%;
       background-position: left;
@@ -40,6 +42,7 @@ body {
     .header__nav {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
       min-width: 25%;
       .header__nav-item {
         color: #fff;
@@ -47,3 +50,99 @@ body {
         padding: 10px 12px;
       }
     }
+
+//SERACH BAR
+.search-bar {
+  float: right;
+  width: 200px;
+  margin: 10px 30px;
+  background: #eee;
+  padding: 12px 15px;
+  .search-bar__field--grey {
+    background: #eee;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    &::placeholder {
+      color: #bbb;
+    }
+  }
+    .search-bar__button--grey {
+      float: right;
+      background: #eee;
+      border: none;
+      color: #bbb;}
+}
+
+//CTA SECTION
+.cta {
+  width: 100%;
+  padding: 10px 30px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+//CTA IMAGE LEFT
+.cta__image {
+  display: block;
+  width: 45%;
+  max-width: 503px;
+  min-width: 300px;
+  height: 100%;
+}
+
+.cta__text-box--right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  .cta__paragraph {
+    color: #e99a0a;
+    font-size: 34px;
+    line-height: 50px;
+    }
+  }
+.logo__paragraph {
+  font-weight: 100;
+  letter-spacing: -1px;
+  font-weight: 500;}
+  .cta__paragraph sup {
+   vertical-align: super;
+    font-size: 12px;}
+   .cta__paragraph strong {
+     color: #06d8ce;
+     font-weight: 900;
+    }
+
+.cta__buttons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 3%;
+  .cta__button-quote--orange {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    flex-basis: 200px;
+   flex-shrink: 0;
+    padding: 12px 5px;
+    background: #e99a0a;
+
+  }
+  .cta__button-case-studies--cyan {
+   text-align: center;
+   text-decoration: none;
+   color: #fff;
+   flex-basis: 200px;
+   flex-shrink: 0;
+   padding: 12px 5px;
+   background: #06d8ce;   }
+}
+
+.blue__section {
+  height: 100px;
+  background: #06d8ce;
+}
