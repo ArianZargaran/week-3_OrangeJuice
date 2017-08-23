@@ -10,24 +10,15 @@ body {
 
 /* line 12, main.scss */
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: block;
+  background-color: #e99a0a;
   padding: 20px 50px;
-  background-color: #e99a0a; }
+  text-align: center; }
 
-/* line 20, main.scss */
+/* line 19, main.scss */
 .header__logo {
-  background-image: url("#"); }
-  /* line 22, main.scss */
+  display: block; }
+  /* line 21, main.scss */
   .header__logo .header__logo-link {
     font-weight: 100;
     padding: 10px 10px 10px 33px;
@@ -39,15 +30,15 @@ body {
     background-repeat: no-repeat;
     background-size: 15%;
     background-position: left; }
-    /* line 33, main.scss */
+    /* line 32, main.scss */
     .header__logo .header__logo-link .header__logo--bold {
       font-weight: 500; }
-    /* line 35, main.scss */
+    /* line 34, main.scss */
     .header__logo .header__logo-link sup {
       vertical-align: super;
       font-size: 12px; }
 
-/* line 42, main.scss */
+/* line 41, main.scss */
 .header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -58,40 +49,55 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   min-width: 25%; }
-  /* line 47, main.scss */
+  /* line 46, main.scss */
   .header__nav .header__nav-item {
     color: #fff;
     text-decoration: none;
     padding: 10px 12px; }
 
-/* line 55, main.scss */
+@media only screen and (min-width: 775.01px) {
+  /* line 54, main.scss */
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: left; } }
+/* line 65, main.scss */
 .search-bar {
   float: right;
   width: 200px;
   margin: 10px 30px;
   background: #eee;
   padding: 12px 15px; }
-  /* line 61, main.scss */
+  /* line 71, main.scss */
   .search-bar .search-bar__field--grey {
     background: #eee;
     border: none;
     outline: none;
     font-size: 12px; }
-    /* line 66, main.scss */
+    /* line 76, main.scss */
     .search-bar .search-bar__field--grey::-webkit-input-placeholder {
       color: #bbb; }
     .search-bar .search-bar__field--grey:-ms-input-placeholder {
       color: #bbb; }
     .search-bar .search-bar__field--grey::placeholder {
       color: #bbb; }
-  /* line 70, main.scss */
+  /* line 80, main.scss */
   .search-bar .search-bar__button--grey {
     float: right;
     background: #eee;
     border: none;
     color: #bbb; }
 
-/* line 78, main.scss */
+/* line 88, main.scss */
 .cta {
   width: 100%;
   padding: 10px 30px 50px;
@@ -107,7 +113,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
-/* line 88, main.scss */
+/* line 98, main.scss */
 .cta__image {
   display: block;
   width: 45%;
@@ -115,7 +121,7 @@ body {
   min-width: 300px;
   height: 100%; }
 
-/* line 96, main.scss */
+/* line 106, main.scss */
 .cta__text-box--right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -128,29 +134,29 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 40%; }
-  /* line 101, main.scss */
+  /* line 111, main.scss */
   .cta__text-box--right .cta__paragraph {
     color: #e99a0a;
     font-size: 34px;
     line-height: 50px; }
 
-/* line 107, main.scss */
+/* line 117, main.scss */
 .logo__paragraph {
   font-weight: 100;
   letter-spacing: -1px;
   font-weight: 500; }
 
-/* line 111, main.scss */
+/* line 121, main.scss */
 .cta__paragraph sup {
   vertical-align: super;
   font-size: 12px; }
 
-/* line 114, main.scss */
+/* line 124, main.scss */
 .cta__paragraph strong {
   color: #06d8ce;
   font-weight: 900; }
 
-/* line 119, main.scss */
+/* line 129, main.scss */
 .cta__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -161,7 +167,7 @@ body {
       flex-wrap: wrap;
   width: 100%;
   margin-top: 3%; }
-  /* line 125, main.scss */
+  /* line 135, main.scss */
   .cta__buttons .cta__button-quote--orange {
     text-align: center;
     text-decoration: none;
@@ -172,7 +178,7 @@ body {
         flex-shrink: 0;
     padding: 12px 5px;
     background: #e99a0a; }
-  /* line 135, main.scss */
+  /* line 145, main.scss */
   .cta__buttons .cta__button-case-studies--cyan {
     text-align: center;
     text-decoration: none;
@@ -184,7 +190,7 @@ body {
     padding: 12px 5px;
     background: #06d8ce; }
 
-/* line 145, main.scss */
+/* line 155, main.scss */
 .blue__section {
   height: 100px;
   background: #06d8ce; }

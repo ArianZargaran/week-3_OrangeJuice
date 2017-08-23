@@ -10,46 +10,56 @@ body {
 
 //HEADER SECTION
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  display: block;
+  background-color: #e99a0a;
   padding: 20px 50px;
-  background-color: #e99a0a;  }
+  text-align: center;
+}
 
-  .header__logo {
-    background-image: url('#');
-    .header__logo-link {
-      font-weight: 100;
-      padding: 10px 10px 10px 33px;
-      font-size: 34px;
-      text-decoration: none;
+.header__logo {
+  display: block;
+  .header__logo-link {
+    font-weight: 100;
+    padding: 10px 10px 10px 33px;
+    font-size: 34px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: -1px;
+    background-image: url('https://arianzargaran.github.io/week-3_OrangeJuice/icons/logo.png');
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: left;
+    .header__logo--bold {
+      font-weight: 500;}
+      sup {
+        vertical-align: super;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-width: 25%;
+    .header__nav-item {
       color: #fff;
-      letter-spacing: -1px;
-      background-image: url('https://arianzargaran.github.io/week-3_OrangeJuice/icons/logo.png');
-      background-repeat: no-repeat;
-      background-size: 15%;
-      background-position: left;
-      .header__logo--bold {
-        font-weight: 500;}
-        sup {
-          vertical-align: super;
-          font-size: 12px;
-        }
-      }
+      text-decoration: none;
+      padding: 10px 12px;
     }
+  }
 
-    .header__nav {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      min-width: 25%;
-      .header__nav-item {
-        color: #fff;
-        text-decoration: none;
-        padding: 10px 12px;
-      }
-    }
+@media only screen and (min-width: 775.01px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+}
+
 
 //SERACH BAR
 .search-bar {
