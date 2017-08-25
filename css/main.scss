@@ -14,6 +14,13 @@ body {
   background-color: #e99a0a;
   padding: 20px 50px;
   text-align: center;
+  @media only screen and (min-width: 775.01px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      text-align: left;
+  }
 }
 
 .header__logo {
@@ -37,7 +44,6 @@ body {
       }
     }
   }
-
   .header__nav {
     display: flex;
     justify-content: space-between;
@@ -50,39 +56,51 @@ body {
     }
   }
 
-@media only screen and (min-width: 775.01px) {
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: left;
-  }
-}
-
 
 //SERACH BAR
 .search-bar {
-  float: right;
-  width: 200px;
-  margin: 10px 30px;
+  width: 100%;
+  margin: 0 auto 20px;
   background: #eee;
   padding: 12px 15px;
-  .search-bar__field--grey {
-    background: #eee;
-    border: none;
-    outline: none;
-    font-size: 12px;
-    &::placeholder {
-      color: #bbb;
+  @media only screen and (min-width: 578.01px) and (max-width: 1257.00px) {
+    float: right;
+    width: 40%;
+    margin: 10px 30px; }
+    @media only screen and (min-width: 1257.01px) {
+      float: right;
+      width: 200px;
+      margin: 10px 30px;
+      padding: 12px 15px;
     }
   }
-    .search-bar__button--grey {
-      float: right;
-      background: #eee;
-      border: none;
-      color: #bbb;}
+
+.search-bar__field--grey {
+  background: #eee;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  &::placeholder {
+    color: #bbb;
+  }
+  @media only screen and (min-width: 1257.01px) {
+    font-size: 12px;
+  }
 }
+
+.search-bar__button--grey {
+  float: right;
+  background: #eee;
+  border: none;
+  color: #bbb;
+  @media only screen and (min-width: 1257.01px) {
+    float: right;
+    background: #eee;
+    border: none;
+    color: #bbb;
+    }
+  }
+
 
 //CTA SECTION
 .cta {
@@ -93,7 +111,6 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
-
 //CTA IMAGE LEFT
 .cta__image {
   display: block;
@@ -101,47 +118,85 @@ body {
   max-width: 503px;
   min-width: 300px;
   height: 100%;
+  @media only screen and (min-width: 613.01px) and (max-width: 1257.00px) {
+    .cta__image {
+      width: 40%;
+      min-width: 325px;
+    }
+  }
 }
-
 .cta__text-box--right {
   display: flex;
   flex-direction: column;
+  text-align: center;
   align-items: center;
-  width: 40%;
+  width: 100%;
+  @media only screen and (min-width: 613.01px) and (max-width: 1257.00px) {
+    width: 40%;
+  }
+  @media only screen and (min-width: 1257.01px) {
+      text-align: left;
+      flex-direction: column;
+      align-items: center;
+      width: 40%;
+    }
   .cta__paragraph {
     color: #e99a0a;
     font-size: 34px;
     line-height: 50px;
+    @media only screen and (min-width: 613.01px) and (max-width: 1257.00px) {
+      font-size: 30px;
+      line-height: 45px;
+      text-align: left;
+      }
     }
-  }
+}
+
 .logo__paragraph {
   font-weight: 100;
   letter-spacing: -1px;
   font-weight: 500;}
   .cta__paragraph sup {
-   vertical-align: super;
-    font-size: 12px;}
+    vertical-align: super;
+    font-size: 12px;
+   @media only screen and (min-width: 613.01px) and (max-width: 1257.00px) {
+     font-size: 10px;}
+      }
    .cta__paragraph strong {
      color: #06d8ce;
      font-weight: 900;
     }
-
 .cta__buttons {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
-  width: 100%;
-  margin-top: 3%;
+  font-size: 20px;
+  margin-top: 6%;
+  @media only screen and (min-width: 613.01px) and (max-width: 1257.00px) {
+    font-size: 18px;
+    margin-top: 5%;
+    }
+  @media only screen and (min-width: 1257.01px) {
+    justify-content: center;
+    font-size: 16px;
+    width: 110%;
+  }
+}
   .cta__button-quote--orange {
     text-align: center;
     text-decoration: none;
     color: #fff;
     flex-basis: 200px;
-   flex-shrink: 0;
+    margin-bottom: 5px;
+    flex-shrink: 0;
     padding: 12px 5px;
     background: #e99a0a;
-
+    @media only screen and (min-width: 1257.01px) {
+      margin: 0px;
+      margin-right: 5px;
+    }
   }
+
   .cta__button-case-studies--cyan {
    text-align: center;
    text-decoration: none;
@@ -149,10 +204,10 @@ body {
    flex-basis: 200px;
    flex-shrink: 0;
    padding: 12px 5px;
-   background: #06d8ce;   }
-}
+   background: #06d8ce;
+  }
 
 .blue__section {
   height: 100px;
   background: #06d8ce;
-}
+  }

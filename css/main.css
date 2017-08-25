@@ -14,11 +14,26 @@ body {
   background-color: #e99a0a;
   padding: 20px 50px;
   text-align: center; }
+  @media only screen and (min-width: 775.01px) {
+    /* line 12, main.scss */
+    .header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      text-align: left; } }
 
-/* line 19, main.scss */
+/* line 26, main.scss */
 .header__logo {
   display: block; }
-  /* line 21, main.scss */
+  /* line 28, main.scss */
   .header__logo .header__logo-link {
     font-weight: 100;
     padding: 10px 10px 10px 33px;
@@ -30,15 +45,15 @@ body {
     background-repeat: no-repeat;
     background-size: 15%;
     background-position: left; }
-    /* line 32, main.scss */
+    /* line 39, main.scss */
     .header__logo .header__logo-link .header__logo--bold {
       font-weight: 500; }
-    /* line 34, main.scss */
+    /* line 41, main.scss */
     .header__logo .header__logo-link sup {
       vertical-align: super;
       font-size: 12px; }
 
-/* line 41, main.scss */
+/* line 47, main.scss */
 .header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -49,55 +64,65 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   min-width: 25%; }
-  /* line 46, main.scss */
+  /* line 52, main.scss */
   .header__nav .header__nav-item {
     color: #fff;
     text-decoration: none;
     padding: 10px 12px; }
 
-@media only screen and (min-width: 775.01px) {
-  /* line 54, main.scss */
-  .header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    text-align: left; } }
-/* line 65, main.scss */
+/* line 61, main.scss */
 .search-bar {
-  float: right;
-  width: 200px;
-  margin: 10px 30px;
+  width: 100%;
+  margin: 0 auto 20px;
   background: #eee;
   padding: 12px 15px; }
-  /* line 71, main.scss */
-  .search-bar .search-bar__field--grey {
-    background: #eee;
-    border: none;
-    outline: none;
-    font-size: 12px; }
-    /* line 76, main.scss */
-    .search-bar .search-bar__field--grey::-webkit-input-placeholder {
-      color: #bbb; }
-    .search-bar .search-bar__field--grey:-ms-input-placeholder {
-      color: #bbb; }
-    .search-bar .search-bar__field--grey::placeholder {
-      color: #bbb; }
-  /* line 80, main.scss */
-  .search-bar .search-bar__button--grey {
-    float: right;
-    background: #eee;
-    border: none;
-    color: #bbb; }
+  @media only screen and (min-width: 578.01px) and (max-width: 1257px) {
+    /* line 61, main.scss */
+    .search-bar {
+      float: right;
+      width: 40%;
+      margin: 10px 30px; } }
+  @media only screen and (min-width: 1257.01px) {
+    /* line 61, main.scss */
+    .search-bar {
+      float: right;
+      width: 200px;
+      margin: 10px 30px;
+      padding: 12px 15px; } }
 
-/* line 88, main.scss */
+/* line 78, main.scss */
+.search-bar__field--grey {
+  background: #eee;
+  border: none;
+  outline: none;
+  font-size: 16px; }
+  /* line 83, main.scss */
+  .search-bar__field--grey::-webkit-input-placeholder {
+    color: #bbb; }
+  .search-bar__field--grey:-ms-input-placeholder {
+    color: #bbb; }
+  .search-bar__field--grey::placeholder {
+    color: #bbb; }
+  @media only screen and (min-width: 1257.01px) {
+    /* line 78, main.scss */
+    .search-bar__field--grey {
+      font-size: 12px; } }
+
+/* line 91, main.scss */
+.search-bar__button--grey {
+  float: right;
+  background: #eee;
+  border: none;
+  color: #bbb; }
+  @media only screen and (min-width: 1257.01px) {
+    /* line 91, main.scss */
+    .search-bar__button--grey {
+      float: right;
+      background: #eee;
+      border: none;
+      color: #bbb; } }
+
+/* line 106, main.scss */
 .cta {
   width: 100%;
   padding: 10px 30px 50px;
@@ -113,15 +138,20 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
-/* line 98, main.scss */
+/* line 115, main.scss */
 .cta__image {
   display: block;
   width: 45%;
   max-width: 503px;
   min-width: 300px;
   height: 100%; }
+  @media only screen and (min-width: 613.01px) and (max-width: 1257px) {
+    /* line 122, main.scss */
+    .cta__image .cta__image {
+      width: 40%;
+      min-width: 325px; } }
 
-/* line 106, main.scss */
+/* line 128, main.scss */
 .cta__text-box--right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -130,67 +160,116 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 40%; }
-  /* line 111, main.scss */
+  width: 100%; }
+  @media only screen and (min-width: 613.01px) and (max-width: 1257px) {
+    /* line 128, main.scss */
+    .cta__text-box--right {
+      width: 40%; } }
+  @media only screen and (min-width: 1257.01px) {
+    /* line 128, main.scss */
+    .cta__text-box--right {
+      text-align: left;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 40%; } }
+  /* line 143, main.scss */
   .cta__text-box--right .cta__paragraph {
     color: #e99a0a;
     font-size: 34px;
     line-height: 50px; }
+    @media only screen and (min-width: 613.01px) and (max-width: 1257px) {
+      /* line 143, main.scss */
+      .cta__text-box--right .cta__paragraph {
+        font-size: 30px;
+        line-height: 45px;
+        text-align: left; } }
 
-/* line 117, main.scss */
+/* line 155, main.scss */
 .logo__paragraph {
   font-weight: 100;
   letter-spacing: -1px;
   font-weight: 500; }
 
-/* line 121, main.scss */
+/* line 159, main.scss */
 .cta__paragraph sup {
   vertical-align: super;
   font-size: 12px; }
+  @media only screen and (min-width: 613.01px) and (max-width: 1257px) {
+    /* line 159, main.scss */
+    .cta__paragraph sup {
+      font-size: 10px; } }
 
-/* line 124, main.scss */
+/* line 165, main.scss */
 .cta__paragraph strong {
   color: #06d8ce;
   font-weight: 900; }
 
-/* line 129, main.scss */
+/* line 169, main.scss */
 .cta__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 100%;
-  margin-top: 3%; }
-  /* line 135, main.scss */
-  .cta__buttons .cta__button-quote--orange {
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    -ms-flex-preferred-size: 200px;
-        flex-basis: 200px;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-    padding: 12px 5px;
-    background: #e99a0a; }
-  /* line 145, main.scss */
-  .cta__buttons .cta__button-case-studies--cyan {
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    -ms-flex-preferred-size: 200px;
-        flex-basis: 200px;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-    padding: 12px 5px;
-    background: #06d8ce; }
+  font-size: 20px;
+  margin-top: 6%; }
+  @media only screen and (min-width: 613.01px) and (max-width: 1257px) {
+    /* line 169, main.scss */
+    .cta__buttons {
+      font-size: 18px;
+      margin-top: 5%; } }
+  @media only screen and (min-width: 1257.01px) {
+    /* line 169, main.scss */
+    .cta__buttons {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      font-size: 16px;
+      width: 110%; } }
 
-/* line 155, main.scss */
+/* line 185, main.scss */
+.cta__button-quote--orange {
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  -ms-flex-preferred-size: 200px;
+      flex-basis: 200px;
+  margin-bottom: 5px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 12px 5px;
+  background: #e99a0a; }
+  @media only screen and (min-width: 1257.01px) {
+    /* line 185, main.scss */
+    .cta__button-quote--orange {
+      margin: 0px;
+      margin-right: 5px; } }
+
+/* line 200, main.scss */
+.cta__button-case-studies--cyan {
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  -ms-flex-preferred-size: 200px;
+      flex-basis: 200px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 12px 5px;
+  background: #06d8ce; }
+
+/* line 210, main.scss */
 .blue__section {
   height: 100px;
   background: #06d8ce; }
